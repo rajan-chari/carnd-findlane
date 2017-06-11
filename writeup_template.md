@@ -23,7 +23,19 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of the following steps:
+
+* Convert the images to grayscale
+* Perform Gaussian blur
+* Detect edges using Canny edge detection
+* Create a trepezoidal region of interest and mask the image
+* Detect lines using Hough line detection
+* Remove noise (bad lines)
+    * Seperate lines into ones with positive slopes and ones with negative slopes
+    * Remove lines for each collection with slopes that are abnormal.
+    * Remove lines with positive slopes from the left side of the image and viceversa
+* Use linear regression to find a line that represents all the lines for each side
+
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
