@@ -40,9 +40,10 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 Potential shorcomings with current pipeline
 * Does not handle high contrast shadows and light on the road
+* Does not handle changing contrast on the road (concrete road for example)
 * Does not handle snow 
 * Does not handle missing or extra lane markings
-* Does not handle sharp curves
+* Does not handle curves well
 
 ### 3. Suggest possible improvements to your pipeline
 
